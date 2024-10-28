@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Almira Rahma Fadhila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css'%}">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            {% include "myapp/navbar.html" %}
+        </div>
+        <br>
+        <div class="main">
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2024 Almira Rahma Fadhila. All rights reserved.</p>
+</footer>
+</html>

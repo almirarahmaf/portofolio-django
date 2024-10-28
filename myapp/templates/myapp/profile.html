@@ -1,0 +1,26 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="profile-photo">
+    <img src="{% static 'myapp/images/profile.png'%}" alt="profile-photo" class="myphoto">
+</div>
+<div class="greeting">
+    <h1>Hello!</h1>
+</div>
+<div class="name">
+    <p>I'm Almira Rahma Fadhila</p>
+</div>
+<div class="description">
+    <p>Saya merupakan mahasiswa Pendidikan Ilmu Komputer di Universitas Pendidikan Indonesia 
+        yang memiliki ketertarikan pada bidang teknologi informasi. Saya dikenal sebagai 
+        pribadi pekerja keras dan mampu bekerja secara efektif baik dalam tim maupun secara individu</p>
+</div>
+<div class="button">
+    <a href="{% url 'contact' %}">Connect With Me</a>
+</div>
+<div class="footer-profile">
+
+</div>
+
+{% endblock content %}

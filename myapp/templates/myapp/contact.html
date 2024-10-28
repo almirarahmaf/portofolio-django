@@ -1,0 +1,79 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="title">
+    <h1>Get In Touch</h1>
+    <p>Hello! The first step to creating something amazing starts with a simple message. <br>
+        If you're interested in my work, want to collaborate, or expand your network, <br>
+        let's connect and explore new opportunities together</p>
+</div>
+<div class="grid-contact">
+    <div class="grid-item contact1">
+        <div class="contact">
+            <h1>Contact Information</h1>
+            <p>Interested in my work or just want to say hi? <br>
+            I’d love to hear from you!</p>
+            <div class="linkedin">
+                <div class="item">
+                    <div class="logo">
+                        <a href="https://www.linkedin.com/in/almira-rahma-fadhila-18a861198/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h3>LinkedIn</h3>
+                        <a class="caption" href="https://www.linkedin.com/in/almira-rahma-fadhila-18a861198/">Almira Rahma Fadhila</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="instagram">
+                <div class="item">
+                    <div class="logo">
+                        <a href="https://www.instagram.com/almirafrhe_/" class="fa fa-envelope"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h3>Instagram</h3>
+                        <a class="caption" href="https://www.instagram.com/almirafrhe_/">almirafrhe_</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="phone-number">
+                <div class="item">
+                    <div class="logo">
+                        <a href="tel:+6285720881087" class="fa fa-phone"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h3>Phone Number</h3>
+                        <a class="caption" href="tel:+6285720881087">(+62)857-2088-1087</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="message">
+            <form action="#">
+                <h1>Send a Message</h1>
+                <div class="mform">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com">
+                    <br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:55px"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
